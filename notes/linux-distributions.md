@@ -101,6 +101,12 @@ dnf repolist
 exit
 ```
 
+### Screenshot evidence
+
+![RHEL 9.8 UBI terminal: os-release, rpm -q, FHS paths, dnf repolist](../evidence/2026-09-21-rhel-9.8-ubi-terminal.png)
+
+*Student-run session in `ubi9/ubi` — RHEL 9.8 (Plow), `rpm-4.16.1.3-40.el9`, FHS paths, UBI repos without entitlement registration.*
+
 **Honest boundary:** UBI is free RHEL *userspace* for containers. `dnf repolist` showed the entitlement wall — this system is not registered with an entitlement server. UBI is not a subscribed RHEL install. Subscription and VM boxes stay open.
 
 No VirtualBox/VMware on this machine at time of proof. ISO is ready on disk for the VM step when a hypervisor exists.
