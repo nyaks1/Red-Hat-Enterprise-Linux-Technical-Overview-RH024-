@@ -83,17 +83,25 @@ Shared tools and kernels do not mean identical day-to-day experience. Defaults, 
 | --- | --- | --- |
 | 2026-09-21 | Downloaded `rhel-9.8-x86_64-boot.iso` | 1,440 MB on disk; not a partial `.crdownload` |
 | 2026-09-21 | Mounted ISO on Windows | Drive `D:`, label `RHEL-9-8-0-BaseO`, contents `EFI/`, `images/`, `isolinux/` |
-| 2026-09-21 | Ran Red Hat UBI9 in Docker (WSL Ubuntu 24.04) | `os-release` reports **Red Hat Enterprise Linux 9.8 (Plow)**; `dnf` + `rpm` present; `/etc`, `/usr`, `/var` exist |
+| 2026-09-21 | Ran Red Hat UBI9 in Docker (WSL Ubuntu 24.04) | `os-release` reports **Red Hat Enterprise Linux 9.8 (Plow)** |
+| 2026-09-21 | Hands-on in UBI container | `rpm -q rpm` → `rpm-4.16.1.3-40.el9.x86_64`; `/etc`, `/usr`, `/var` present |
+| 2026-09-21 | `dnf repolist` in UBI | UBI repos listed (`ubi-9-baseos-rpms`, `ubi-9-appstream-rpms`, `ubi-9-codeready-builder-rpms`); **not registered** — `Unable to read consumer identity` |
 
-Commands used (WSL):
+How to re-run (PowerShell → WSL):
 
-```bash
-docker pull registry.access.redhat.com/ubi9/ubi:latest
-docker run --rm registry.access.redhat.com/ubi9/ubi:latest \
-  bash -lc 'cat /etc/os-release; command -v dnf rpm; ls -ld /etc /usr /var'
+```powershell
+wsl -d Ubuntu -- docker run --rm -it registry.access.redhat.com/ubi9/ubi:latest bash
 ```
 
-**Honest boundary:** UBI is free RHEL *userspace* for containers. It is not a subscribed RHEL install. It proves you can run RHEL tooling (`rpm`/`dnf`, FHS, 9.8 identity). It does **not** prove the developer subscription or a production-style VM. Those boxes stay open.
+```bash
+cat /etc/os-release
+rpm -q rpm
+ls -ld /etc /usr /var
+dnf repolist
+exit
+```
+
+**Honest boundary:** UBI is free RHEL *userspace* for containers. `dnf repolist` showed the entitlement wall — this system is not registered with an entitlement server. UBI is not a subscribed RHEL install. Subscription and VM boxes stay open.
 
 No VirtualBox/VMware on this machine at time of proof. ISO is ready on disk for the VM step when a hypervisor exists.
 
