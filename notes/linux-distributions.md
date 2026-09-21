@@ -72,9 +72,30 @@ Shared tools and kernels do not mean identical day-to-day experience. Defaults, 
 ## Hands-on checklist
 
 - [x] Red Hat Developer account (2026-09-21) — Sandbox ≠ RHEL subscription
+- [x] Download RHEL 9.8 Boot ISO (2026-09-21)
+- [x] Touch RHEL 9.8 userspace without a hypervisor (UBI container, 2026-09-21)
 - [ ] Confirm no-cost RHEL developer subscription
-- [ ] Install RHEL 9.8 Boot ISO in a VM
-- [ ] Prove it: `subscription-manager list --consumed`
+- [ ] Boot the ISO in a VM and prove `subscription-manager list --consumed`
+
+## Evidence log (proof of work)
+
+| Date | What | Result |
+| --- | --- | --- |
+| 2026-09-21 | Downloaded `rhel-9.8-x86_64-boot.iso` | 1,440 MB on disk; not a partial `.crdownload` |
+| 2026-09-21 | Mounted ISO on Windows | Drive `D:`, label `RHEL-9-8-0-BaseO`, contents `EFI/`, `images/`, `isolinux/` |
+| 2026-09-21 | Ran Red Hat UBI9 in Docker (WSL Ubuntu 24.04) | `os-release` reports **Red Hat Enterprise Linux 9.8 (Plow)**; `dnf` + `rpm` present; `/etc`, `/usr`, `/var` exist |
+
+Commands used (WSL):
+
+```bash
+docker pull registry.access.redhat.com/ubi9/ubi:latest
+docker run --rm registry.access.redhat.com/ubi9/ubi:latest \
+  bash -lc 'cat /etc/os-release; command -v dnf rpm; ls -ld /etc /usr /var'
+```
+
+**Honest boundary:** UBI is free RHEL *userspace* for containers. It is not a subscribed RHEL install. It proves you can run RHEL tooling (`rpm`/`dnf`, FHS, 9.8 identity). It does **not** prove the developer subscription or a production-style VM. Those boxes stay open.
+
+No VirtualBox/VMware on this machine at time of proof. ISO is ready on disk for the VM step when a hypervisor exists.
 
 ## Standing gates for this track
 
