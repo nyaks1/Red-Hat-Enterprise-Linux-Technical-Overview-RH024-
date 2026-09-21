@@ -8,7 +8,8 @@ Public learning log for the free **RH024** course. Goal: complete the track for 
 
 | Note | Session | What it covers |
 | --- | --- | --- |
-| [Linux distributions](notes/linux-distributions.md) | Linux Distributions Unveiled | Kernel vs distro, Fedora → CentOS Stream → RHEL, RPM vs APT, support phases, and why open source makes the system mine |
+| [Linux distributions](notes/linux-distributions.md) | Linux Distributions Unveiled | Kernel vs distro, Fedora → CentOS Stream → RHEL, RPM vs APT, support phases, open-source ownership |
+| [Introduction to the shell](notes/introduction-to-the-shell.md) | Linux Command Line Basics | Why the CLI exists, Bash default, command/options/arguments, tab completion, personal fish/zsh curiosity vs RHEL Bash |
 
 ## Rules for this repo
 
