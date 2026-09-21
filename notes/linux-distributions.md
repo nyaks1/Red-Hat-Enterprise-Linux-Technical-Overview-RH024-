@@ -69,13 +69,12 @@ There is also a practical door for students and independents: Red Hat's **no-cos
 
 Shared tools and kernels do not mean identical day-to-day experience. Defaults, configuration, and release schedule change how the machine feels — like two cars built from similar parts but tuned very differently.
 
-## Hands-on checklist (the real proof)
+## Hands-on checklist
 
-- [ ] Register for the Red Hat Developer no-cost subscription
-- [ ] Install RHEL or Fedora in a VM and note the install choices that matter
-- [ ] Practice package commands (`dnf`, `rpm`) until the mental model is automatic
-- [ ] Change **one** thing on purpose (motd, shell prompt, a service config), document what broke or improved, and commit the note here
-- [ ] Keep this repo updating on a steady cadence — the trail is part of the skill
+- [x] Red Hat Developer account (2026-09-21) — Sandbox ≠ RHEL subscription
+- [ ] Confirm no-cost RHEL developer subscription
+- [ ] Install RHEL 9.8 Boot ISO in a VM
+- [ ] Prove it: `subscription-manager list --consumed`
 
 ## Standing gates for this track
 
