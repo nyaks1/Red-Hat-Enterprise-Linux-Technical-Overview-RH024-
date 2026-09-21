@@ -74,6 +74,7 @@ Shared tools and kernels do not mean identical day-to-day experience. Defaults, 
 - [x] Red Hat Developer account (2026-09-21) — Sandbox ≠ RHEL subscription
 - [x] Download RHEL 9.8 Boot ISO (2026-09-21)
 - [x] Touch RHEL 9.8 userspace without a hypervisor (UBI container, 2026-09-21)
+- [x] Write to the RHEL filesystem on purpose (ownership proof, 2026-09-21)
 - [ ] Confirm no-cost RHEL developer subscription
 - [ ] Boot the ISO in a VM and prove `subscription-manager list --consumed`
 
@@ -86,6 +87,7 @@ Shared tools and kernels do not mean identical day-to-day experience. Defaults, 
 | 2026-09-21 | Ran Red Hat UBI9 in Docker (WSL Ubuntu 24.04) | `os-release` reports **Red Hat Enterprise Linux 9.8 (Plow)** |
 | 2026-09-21 | Hands-on in UBI container | `rpm -q rpm` → `rpm-4.16.1.3-40.el9.x86_64`; `/etc`, `/usr`, `/var` present |
 | 2026-09-21 | `dnf repolist` in UBI | UBI repos listed (`ubi-9-baseos-rpms`, `ubi-9-appstream-rpms`, `ubi-9-codeready-builder-rpms`); **not registered** — `Unable to read consumer identity` |
+| 2026-09-21 | Ownership write on RHEL FS | `echo "Nyaks was here — RH024 UBI $(date -u)" > /tmp/nyaks-proof.txt` then `cat` → `Nyaks was here — RH024 UBI Mon Sep 21 17:44:19 UTC 2026` |
 
 How to re-run (PowerShell → WSL):
 
@@ -98,6 +100,8 @@ cat /etc/os-release
 rpm -q rpm
 ls -ld /etc /usr /var
 dnf repolist
+echo "Nyaks was here — RH024 UBI $(date -u)" > /tmp/nyaks-proof.txt
+cat /tmp/nyaks-proof.txt
 exit
 ```
 
@@ -107,7 +111,11 @@ exit
 
 *Student-run session in `ubi9/ubi` — RHEL 9.8 (Plow), `rpm-4.16.1.3-40.el9`, FHS paths, UBI repos without entitlement registration.*
 
-**Honest boundary:** UBI is free RHEL *userspace* for containers. `dnf repolist` showed the entitlement wall — this system is not registered with an entitlement server. UBI is not a subscribed RHEL install. Subscription and VM boxes stay open.
+![RHEL 9.8 UBI ownership proof: Nyaks was here written to /tmp/nyaks-proof.txt](../evidence/2026-09-21-rhel-9.8-ubi-ownership-proof.png)
+
+*Ownership step — wrote `/tmp/nyaks-proof.txt` on the RHEL filesystem and read it back, then exited the container.*
+
+**Honest boundary:** UBI is free RHEL *userspace* for containers. `dnf repolist` showed the entitlement wall — this system is not registered with an entitlement server. UBI is not a subscribed RHEL install. Subscription and VM boxes stay open (they are not deleted, not “done”).
 
 No VirtualBox/VMware on this machine at time of proof. ISO is ready on disk for the VM step when a hypervisor exists.
 
