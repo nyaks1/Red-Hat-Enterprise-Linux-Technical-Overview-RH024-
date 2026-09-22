@@ -95,6 +95,10 @@ ls -ld /tmp/nyaks-perm-demo/foo
 
 That last part is the lesson in one bug: a directory with only `x` for the owner is awkward to clean up. Mode bits are not decoration.
 
+![File permissions demo](../evidence/2026-09-22-file-permissions-demo.png)
+
+*Terminal evidence: `chmod 644`, `chmod +x`, then `chmod 001` and `Permission denied` on delete.*
+
 Re-run the same three ideas: numeric `chmod`, `chmod +x` for scripts, then a directory mode like `001` to feel “other” in action — and **restore the directory mode before you try to delete it**.
 
 ---

@@ -70,6 +70,10 @@ rm -rf /tmp/nyaks-fm-demo
 
 Re-run in WSL or any Linux shell the same way — paths will match on RHEL.
 
+![Basic file management demo](../evidence/2026-09-22-basic-file-management-demo.png)
+
+*Terminal evidence: `mkdir -pv`, write a file, `cp`/`mv`, then `cd /etc` → `cd /var/log`.*
+
 ---
 
 *RH024 learning note — Basic file management.*

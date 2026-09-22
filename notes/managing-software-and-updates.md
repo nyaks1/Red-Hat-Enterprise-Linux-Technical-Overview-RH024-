@@ -93,6 +93,10 @@ dnf needs-restarting -r
 
 Full errata against the official CDN needs **subscription-manager** (or Satellite). Until then, UBI is enough to practise the verbs: **search → install → list advisories → update → reboot check**.
 
+![Software updates dnf notes](../evidence/2026-09-22-software-updates-dnf-notes.png)
+
+*Terminal evidence: UBI9 `dnf` context and the update/reboot-check commands from the course.*
+
 ---
 
 *RH024 learning note — Managing software and updates.*

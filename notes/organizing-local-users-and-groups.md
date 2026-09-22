@@ -96,6 +96,10 @@ grep -E '^(root|nyaks):' /etc/passwd
 
 That is onboarding in one line: **UID 1000**, home `/home/nyaks`, login shell `/usr/bin/zsh`, and membership in **`sudo`** (RHEL’s equivalent would be **`wheel`**).
 
+![Users and groups identity](../evidence/2026-09-22-users-groups-identity.png)
+
+*Terminal evidence: `id`, `groups`, and `/etc/passwd` lines for root and nyaks.*
+
 Re-run the course pattern on a lab VM when you have admin rights:
 
 ```bash
