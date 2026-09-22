@@ -27,3 +27,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 ## About this repo
 
 Public log of what I learn in RH024. One note per session. Commands and screenshots are what I actually ran on my machine.
+
+## Verification
+
+WTC-2R2Y5MKJ
