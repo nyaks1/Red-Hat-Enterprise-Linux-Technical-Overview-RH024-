@@ -56,17 +56,19 @@ This session is **web**, not terminal — same idea as `man` vs the browser earl
 
 **Why this is useful:** golden images beat snowflake VMs. One blueprint → many identical starts → fewer “works on my box” surprises.
 
-## Screenshots (you capture in the console)
+## Screenshots (console captures)
 
-Browser session on console.redhat.com — drop images into `evidence/` when you have them (keep account email out of frame if you can):
+![Image Builder console](../evidence/2026-09-22-image-builder-console.png)
 
-| Suggested shot | File name to use |
-| --- | --- |
-| Console → Image Builder landing | `evidence/2026-09-22-image-builder-console.png` |
-| Create blueprint form (packages / firewall) | `evidence/2026-09-22-image-builder-blueprint-form.png` |
-| Blueprint created / build queue | `evidence/2026-09-22-image-builder-build.png` |
+*Hybrid Cloud Console → Inventory → Image Builder (empty blueprint list).*
 
-*(Screenshots pending — this flow is on the web; terminal capture does not apply here.)*
+![Create image blueprint form](../evidence/2026-09-22-image-builder-blueprint-form.png)
+
+*Create image blueprint — detail / filesystem / repositories options.*
+
+![Blueprint created](../evidence/2026-09-22-image-builder-build.png)
+
+*Blueprint created: `rhel-10-x86_64-20260922-1446` playbook, Version 1 — ready to **Build images**.*
 
 ---
 
