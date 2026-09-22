@@ -22,6 +22,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 | [Using Image Mode with Bootc](notes/using-image-mode-with-bootc.md) | Using Image Mode with Bootc | full system images, `bootc status`/`switch`/rollback, one-shot updates, transparency of what is running |
 | [Insights Image Builder](notes/insights-image-builder.md) | Insights Image Builder | golden images, blueprints (only what you need), web UI at console.redhat.com, qcow2 builds |
 | [Insights Vulnerability Management](notes/insights-vulnerability-management.md) | Insights Vulnerability Management | prioritised CVEs matched to your packages, `insights-client register`, errata + Ansible remediation |
+| [Managing systems with the RHEL web console](notes/managing-systems-with-the-rhel-web-console.md) | Managing systems with the RHEL web console | Cockpit on :9090, health/logs/storage/services, integrated browser terminal, multi-host |
 
 ## About this repo
 
