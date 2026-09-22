@@ -15,6 +15,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 | [Editing files with Vim](notes/editing-files-with-vim.md) | Editing files with Vim | Vim modes, `i` `Esc` `:w` `:q` `:q!` `yy` `p` `u`, VimTutor in the terminal, Vim vs nano preference |
 | [Organizing local users and groups](notes/organizing-local-users-and-groups.md) | Organizing local users and groups | UIDs, `useradd`/`passwd`/`usermod`, lock vs delete, `wheel` + `sudo`, groups and least privilege, central IdM/AD |
 | [File permissions](notes/file-permissions.md) | File permissions | `rwx` = 4/2/1, owner/group/other, `chmod` `chown` `chgrp`, directory vs file rules, `chmod +x` for scripts |
+| [Managing software and updates](notes/managing-software-and-updates.md) | Managing software and updates | `dnf search`/`install`, RHBA/RHEA/RHSA errata, CVE + CVSS, `dnf update --security`, `dnf needs-restarting -r` |
 
 ## About this repo
 
