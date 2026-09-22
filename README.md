@@ -17,6 +17,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 | [File permissions](notes/file-permissions.md) | File permissions | `rwx` = 4/2/1, owner/group/other, `chmod` `chown` `chgrp`, directory vs file rules, `chmod +x` for scripts |
 | [Managing software and updates](notes/managing-software-and-updates.md) | Managing software and updates | `dnf search`/`install`, RHBA/RHEA/RHSA errata, CVE + CVSS, `dnf update --security`, `dnf needs-restarting -r` |
 | [Managing networking](notes/managing-networking.md) | Managing networking | Network Manager profiles, `nmcli`, `nmtui` menu path, static IPv4 example, verify with `ip` / `resolv.conf` |
+| [Managing system startup services with Systemd](notes/managing-system-startup-services-with-systemd.md) | Managing Services with Systemd | units (service/socket/timer/path/target), `systemctl` start/enable/stop/disable, stop vs disable, FirewallD for httpd |
 
 ## About this repo
 
