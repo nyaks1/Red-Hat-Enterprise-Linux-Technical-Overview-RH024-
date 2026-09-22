@@ -12,6 +12,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 | [Command line assistant](notes/command-line-assistant.md) | RHEL Command Line Assistant / Lightspeed | AI help in the terminal (`c chat`), when it beats `man`, registration requirement |
 | [Linux directories explained](notes/linux-directories-explained.md) | Linux directories explained | `/` root, `/home` `/etc` `/var` `/usr` `/tmp` `/root` `/boot`, why `/tmp` is good for testing scratch work |
 | [Basic file management](notes/basic-file-management.md) | Basic file management | `ls` `mkdir` `cd` `touch` `cp` `mv` `rm`, path jumps like `cd /var/log`, fast create/delete loop |
+| [Editing files with Vim](notes/editing-files-with-vim.md) | Editing files with Vim | Vim modes, `i` `Esc` `:w` `:q` `:q!` `yy` `p` `u`, VimTutor in the terminal, Vim vs nano preference |
 
 ## About this repo
 
