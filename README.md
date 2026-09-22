@@ -9,6 +9,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 | [Linux distributions](notes/linux-distributions.md) | Linux Distributions Unveiled | Kernel vs distro, Fedora → CentOS Stream → RHEL, RPM vs APT, support phases, open source |
 | [Introduction to the shell](notes/introduction-to-the-shell.md) | Linux Command Line Basics | Why the CLI exists, Bash default, command/options/arguments, tab completion, fish/zsh as extras |
 | [Documentation](notes/documentation.md) | Linux Man Pages Guide | `man` pages, search with `/` `n` `q`, sections (1/5/8), `man 5 crontab`, staying in the terminal |
+| [Command line assistant](notes/command-line-assistant.md) | RHEL Command Line Assistant / Lightspeed | AI help in the terminal (`c chat`), when it beats `man`, registration requirement |
 
 ## About this repo
 
