@@ -10,6 +10,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 | [Introduction to the shell](notes/introduction-to-the-shell.md) | Linux Command Line Basics | Why the CLI exists, Bash default, command/options/arguments, tab completion, fish/zsh as extras |
 | [Documentation](notes/documentation.md) | Linux Man Pages Guide | `man` pages, search with `/` `n` `q`, sections (1/5/8), `man 5 crontab`, staying in the terminal |
 | [Command line assistant](notes/command-line-assistant.md) | RHEL Command Line Assistant / Lightspeed | AI help in the terminal (`c chat`), when it beats `man`, registration requirement |
+| [Linux directory structure](notes/linux-directory-structure.md) | Linux Directory Structure | `/` root, `/home` `/etc` `/var` `/usr` `/tmp` `/root` `/boot`, why `/tmp` is good for testing scratch work |
 
 ## About this repo
 
