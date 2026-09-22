@@ -38,15 +38,11 @@ The **text UI (`nmtui`)** is the part I would show a beginner. When you are new,
 
 **Why this is useful:** every server that must be reached over the network starts here. Static lab boxes, home labs, later any infra work — if you can set IP, gateway, and DNS with Network Manager and **verify** them, you stop fearing “the network broke.”
 
-## Screenshots from the session
+## Screenshots from testing here
 
-Course captures (Network Manager Basics — profiles, `nmcli`, `nmtui`, verify commands):
+![Managing networking ip demo](../evidence/2026-09-22-managing-networking-ip-demo.png)
 
-![Network Manager Basics summary](../evidence/2026-09-22-network-manager-basics-summary.jpg)
-
-![nmcli profiles and interfaces](../evidence/2026-09-22-nmcli-interfaces-profiles.jpg)
-
-![nmtui / verify and closing](../evidence/2026-09-22-nmtui-verify-networking.jpg)
+*Terminal evidence: `ip -br link` and `ip -br addr` on this WSL machine (`lo`, `eth0`, `docker0`).*
 
 ## What I can run here
 
