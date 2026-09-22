@@ -68,4 +68,4 @@ bootc rollback    # if version 2 misbehaves
 
 ---
 
-*RH024 learning note — Using Image Mode with Bootc (`bootc`, not “Bootsy”).*
+*RH024 learning note — Using Image Mode with Bootc*
