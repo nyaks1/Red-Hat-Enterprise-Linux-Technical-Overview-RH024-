@@ -1,7 +1,7 @@
-# Linux directory structure
+# Linux directories explained
 
 **Course:** RH024 — Red Hat Enterprise Linux Technical Overview  
-**Session:** Linux Directory Structure (Ricardo Da Costa)  
+**Session:** Linux directories explained / Linux Directory Structure (Ricardo Da Costa)  
 **Logged:** 2026-09-22
 
 ## What the course covered
@@ -65,4 +65,4 @@ echo test > /tmp/demo.txt && cat /tmp/demo.txt
 
 ---
 
-*RH024 learning note — Linux directory structure.*
+*RH024 learning note — Linux directories explained.*
