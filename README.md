@@ -20,6 +20,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 | [Managing system startup services with Systemd](notes/managing-system-startup-services-with-systemd.md) | Managing Services with Systemd | units (service/socket/timer/path/target), `systemctl` start/enable/stop/disable, stop vs disable, FirewallD for httpd |
 | [Deploying an application runtime](notes/deploying-an-application-runtime.md) | Deploying an application runtime | Node.js as `myapp.service`, unit file + `daemon-reload`/`enable --now`, Restart=on-failure, port 8080 + FirewallD, logs via journal |
 | [Using Image Mode with Bootc](notes/using-image-mode-with-bootc.md) | Using Image Mode with Bootc | full system images, `bootc status`/`switch`/rollback, one-shot updates, transparency of what is running |
+| [Insights Image Builder](notes/insights-image-builder.md) | Insights Image Builder | golden images, blueprints (only what you need), web UI at console.redhat.com, qcow2 builds |
 
 ## About this repo
 
