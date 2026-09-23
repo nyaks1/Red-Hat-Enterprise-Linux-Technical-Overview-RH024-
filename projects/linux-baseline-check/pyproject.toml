@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linux-baseline-check"
+version = "0.1.0.dev0"
+description = "Small CLI that scans Linux for risky configuration and prints a short report."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+lbc = "lbc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

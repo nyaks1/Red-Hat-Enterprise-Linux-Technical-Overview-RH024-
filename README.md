@@ -1,8 +1,16 @@
 # Red Hat Enterprise Linux Technical Overview (RH024)
 
-Learning notes for the free **RH024** course. Each session becomes a short note: what it covered, what I liked, what I ran.
+Learning notes for the free **RH024** course, plus a small project built from what those sessions taught. **One repo link — trail + tool.**
 
-## Notes
+## Project (start here)
+
+**[projects/linux-baseline-check](projects/linux-baseline-check/)** — Python CLI that scans a Linux box (or UBI) for risky setup (permissions, users, services, updates) and prints a short report.
+
+> It checks a Linux box for risky configuration before something breaks.
+
+Built from the RH024 themes: file permissions, users/UIDs, systemd, packages/updates. See [docs/SCOPE.md](projects/linux-baseline-check/docs/SCOPE.md) for what it does **not** try to replace (OpenSCAP, Insights, full CIS).
+
+## Notes (RH024 learning trail)
 
 | Note | Session | What it covers |
 | --- | --- | --- |
@@ -26,7 +34,7 @@ Learning notes for the free **RH024** course. Each session becomes a short note:
 
 ## About this repo
 
-Public log of what I learn in RH024. One note per session. Commands and screenshots are what I actually ran on my machine.
+Public log of RH024 learning **and** the project it produced. Notes, commands, and screenshots are what I actually ran on my machine.
 
 ## Verification
 
